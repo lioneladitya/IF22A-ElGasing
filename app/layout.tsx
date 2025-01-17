@@ -7,8 +7,8 @@ import Footer from '@/components/Footer'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Afritour',
-  description: 'Travelling app by nextjs',
+  title: 'Lamskuyy',
+  description: 'Website Travelling',
 }
 
 export default function RootLayout({
