@@ -1,43 +1,34 @@
-import { light } from "@fortawesome/fontawesome-svg-core/import.macro";
-import type { Config } from "tailwindcss";
+import type { Config } from 'tailwindcss'
 
 const config: Config = {
   content: [
-    "./pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    './pages/**/*.{js,ts,jsx,tsx,mdx}',
+    './components/**/*.{js,ts,jsx,tsx,mdx}',
+    './app/**/*.{js,ts,jsx,tsx,mdx}',
+    'node_modules/flowbite-react/lib/esm/**/*.js',
   ],
   theme: {
-    // colors: {
-    //   "color1": "#006BFF",
-    //   "color2": "#FEF9F2"
-    // },
     extend: {
-      spacing: {
-        "5px": "5px",
-        "15px": "15px",
-        "25px": "25px",
-        "10%": "10%",
-        "30%": "30%",
-        "50%": "50%",
+      screens: {
+        'xs': '300px',
+        'sm': '640px',
+        'md': '790px',
+        'lg': '1024px',
+        'xl': '1280px',
+        '2xl': '1536px',
+        '3xl': '1680px',
+        '4xl': '2200px',
       },
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-        color1: "#006BFF",
-        color2: "#FCFAEE",
-        color3: {
-          satu: "#FFCC00",
-          dua: "#FF0000",
-        },
+      maxWidth: {
+        '10xl': '1512px',
+      },
+      borderRadius: {
+        '5xl': '40px',
       },
     },
   },
   plugins: [
-    require('daisyui'),
-  ],
-  daisyui: {
-    theme: ["forest, emerald, bumblebee"],
-  }
-};
-export default config;
+    require('flowbite/plugin'),
+  ]
+}
+export default config

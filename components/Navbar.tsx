@@ -2,7 +2,7 @@
 import React, { useEffect, useState } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
-import { NAV_LINKS } from '../constants'
+import { NAV_LINKS } from '@/constants'
 import Button from './Button'
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
 
