@@ -28,8 +28,8 @@ const Navbar = () => {
     <nav className={scrolling ? 'w-full max-container padding-container flex justify-between py-3 fixed z-50 bg-gray-950/80 text-white' : ' bg-gray-950 text-white max-container padding-container flex justify-between  py-3 '}>
         <div className='left'>
             <Link href='/' className='flexCenter gap-2'>
-                <Image src='/africa.svg' alt='logo' width={40} height={40}/>
-                <h2 className='font-bold text-lg'>AFRITOUR</h2>
+                <Image src='/lampung.png' alt='logo' width={40} height={40}/>
+                <h2 className='font-bold text-lg'>LAMSKUY</h2>
             </Link>            
         </div>
 
