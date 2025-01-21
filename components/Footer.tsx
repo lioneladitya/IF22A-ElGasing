@@ -23,7 +23,7 @@ const Footer = () => {
       </div>
 
       {/* LINK FOOTER */}
-      <div className='right lg:w-2/3 flex xs:flex-col md:flex-row xs:gap-10 md:gap-0 md:justify-between'>
+      <div id="footer-contact" className='right lg:w-2/3 flex xs:flex-col md:flex-row xs:gap-10 md:gap-0 md:justify-between'>
         <FooterCard title='Company' link1='About' link2='Career' link3='Mobile' />
         <FooterCard title='Contact' link1='Why Afritour?' link2='Partner with us' link3='FAQ’s' link4='Blog' />
         <FooterCard title='Meet Us' link1='+0 1234 56789' link2='info@afritour.com' link3='Grove street, los santos' />

@@ -1,0 +1,9 @@
+Nama: Arkan Fadhillah Syahrul
+Npm: 22310252
+
+Bertujuan membuat tombol pricing dan contact pada navbar memiliki fungsi link yang jika di tekan mengarah ke halaman yang dituju.
+perubahan nav_links, Pada elemen <div> ditambahkan ID untuk menjadi target, Properti href untuk tombol Pricing diubah menjadi #destination-section agar terhubung ke bagian Destination, dan tombol Contact diubah menjadi #footer-contact agar terhubung ke bagian kontak di footer.
+
+Menambahkan ID pada elemen yang menjadi target.
+
+Menambahkan scroll-behavior smooth di file css global, efeknya agar animasi yang halus saat menggulir ke target.
