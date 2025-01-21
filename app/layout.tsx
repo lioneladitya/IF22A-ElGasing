@@ -19,10 +19,10 @@ export default function RootLayout({
   return (
     <html lang="en" className='overflow-x-hidden'>
       <body className='overflow-hidden relative'>
-        <div className='circle-pink h-screen w-screen lg:top-[-40%] lg:left-[-15%;] md:left-[-20%;] sm:top-[-50%] sm:left-[-25%] xs:top-[-50%] xs:right-[40%]'/>
+        <div id="home" className='circle-pink h-screen w-screen lg:top-[-40%] lg:left-[-15%;] md:left-[-20%;] sm:top-[-50%] sm:left-[-25%] xs:top-[-50%] xs:right-[40%]'/>
         <div className='circle-yellow h-screen w-screen xl:top-[110%] left-[80%] sm:top-[180%]'/>
         <Navbar />
-        <main className='relative bg-gray-950 text-white overflow-hidden'>
+        <main  className='relative bg-gray-950 text-white overflow-hidden'>
           {children}
         </main>
         <Footer />

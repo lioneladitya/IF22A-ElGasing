@@ -3,6 +3,15 @@ import Image from 'next/image'
 import Button from './Button'
 
 const Hero = () => {
+  const handleScrollTo = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    } else {
+      console.error(`Element with ID "${id}" not found.`);
+    }
+  };
+  
   return (
     <section className='relative max-container padding-container xs:py-12 sm:py-28 xs:gap-16 sm:gap-32 gap-0 flex flex-col xl:flex-row'>
       <div className='bg-hero h-screen w-screen xs:right-[5%] xs:top-[45%] sm:right-[5%] xl:top-[4%] xl:right-[-20%]'/>
@@ -34,4 +43,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default Hero;
