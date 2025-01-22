@@ -1,5 +1,6 @@
 "use client";
 import React from "react";
+import { useRouter } from "next/navigation";
 import Title from "./Title";
 import Image from "next/image";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -9,7 +10,6 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 // import required modules
 import { Pagination } from "swiper/modules";
-import Button from "./Button";
 
 const destinationUrls = {
   "Gunung Pesagi": "https://maps.app.goo.gl/hqkhsezTKkdpBuwD7",
@@ -72,7 +72,7 @@ const Destination = () => {
               country="Lampung Barat"
               price="Rp. 100.000"
               rating="4.8"
-              url={destinationUrls["Gunung Pesagi"]} // Pass the URL here
+              url={destinationUrls["Gunung Pesagi"]}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -82,7 +82,7 @@ const Destination = () => {
               country="Kelumbayan, Tanggamus"
               price="Rp. 80.000"
               rating="4.9"
-              url={destinationUrls["Gigi Hiu"]} // Pass the URL here
+              url={destinationUrls["Gigi Hiu"]}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -92,7 +92,7 @@ const Destination = () => {
               country="Pulau Pahawang"
               price="Rp. 300.000"
               rating="5.0"
-              url={destinationUrls["Pahawang"]} // Pass the URL here
+              url={destinationUrls["Pahawang"]}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -102,7 +102,7 @@ const Destination = () => {
               country="Lampung Timur, Lampung"
               price="Rp. 150.000"
               rating="4.7"
-              url={destinationUrls["Taman Nasional Way Kambas"]} // Pass the URL here
+              url={destinationUrls["Taman Nasional Way Kambas"]}
             />
           </SwiperSlide>
           <SwiperSlide>
@@ -112,7 +112,7 @@ const Destination = () => {
               country="Banjit, Kabupaten Way Kanan, Lampung"
               price="Rp. 20.000"
               rating="4.2"
-              url={destinationUrls["Air Terjun Putri Malu"]} // Pass the URL here
+              url={destinationUrls["Air Terjun Putri Malu"]}
             />
           </SwiperSlide>
         </Swiper>
@@ -127,7 +127,7 @@ interface DestinationCardProps {
   country: string;
   price: string;
   rating: string;
-  url: string; // Change from onClick to url
+  url: string;
 }
 
 const DestinationCard = ({
@@ -138,34 +138,52 @@ const DestinationCard = ({
   rating,
   url,
 }: DestinationCardProps) => {
+  const router = useRouter();
+
+  const handleOrderClick = () => {
+    router.push(
+      `/pesan?place=${encodeURIComponent(place)}&country=${encodeURIComponent(
+        country
+      )}&price=${encodeURIComponent(price)}&rating=${encodeURIComponent(rating)}`
+    );
+  };
+
   return (
     <div className="bg-white/5 h-[600px] w-[340px] pb-4 rounded-3xl shadow-2 flex flex-col gap-4">
       <a href={url} className="h-2/3 rounded-t-3xl cursor-pointer">
         <Image
           className="h-full w-full rounded-t-3xl"
           src={img}
-          alt="img"
-          width={150}
-          height={150}
+          alt={`Foto ${place}`}
+          width={340}
+          height={200}
         />
       </a>
 
-      <div className="h-1/3 px-6">
-        <div className="place-price flex justify-between">
-          <p className="font-bold text-lg w-1/2">{place}</p>
-          <p className="font-bold text-lg md:flex hidden">{price}</p>
+      <div className="h-1/3 px-6 flex flex-col justify-between">
+        <div>
+          <div className="place-price flex justify-between">
+            <p className="font-bold text-lg w-1/2">{place}</p>
+            <p className="font-bold text-lg md:flex hidden">{price}</p>
+          </div>
+          <p className="mt-3">{country}</p>
+          <div className="mt-6 flex gap-1 items-center">
+            <p className="text_orange font-bold">{rating}</p>
+            <Image
+              className="h-full"
+              src="/star.png"
+              alt="Bintang"
+              width={20}
+              height={20}
+            />
+          </div>
         </div>
-        <p className="mt-3">{country}</p>
-        <div className="mt-6 flex gap-1 items-center">
-          <p className="text_orange font-bold">{rating}</p>
-          <Image
-            className="h-full"
-            src="/star.png"
-            alt="star"
-            width={20}
-            height={5}
-          />
-        </div>
+        <button
+          onClick={handleOrderClick}
+          className="mt-4 bg-orange-500 hover:bg-orange-600 text-white text-center py-2 px-4 rounded-lg"
+        >
+          Memesan
+        </button>
       </div>
     </div>
   );
