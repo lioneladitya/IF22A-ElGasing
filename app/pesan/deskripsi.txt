@@ -1,0 +1,1 @@
+untuk kali ini saya aldion menambahkan file page.tsx didalam folder pesan dan mengubah di destination.tsx agar ada button memesan yang memuat data wisata akamat dan harganya lalu ketika klik memesan dia ke page.tsx yang ada di folder pesan disana sudah ada data yang lain yang sudah tertera dan form inputan nama dan juga no visa , tapi belum bisa untuk memesan.
