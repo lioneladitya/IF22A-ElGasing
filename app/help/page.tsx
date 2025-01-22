@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const sections = [
   {
-    title: "Why Afritour",
+    title: "Why Lamskuyy",
     description: "-",
     link: "/help/getting-started",
     linkText: "Learn More",
