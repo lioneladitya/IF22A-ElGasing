@@ -16,11 +16,10 @@ const Footer = () => {
       <div className="flex flex-col gap-12 lg:w-1/3">
         {/* LOGO & TEXT */}
         <div className="flex flex-col gap-4">          
-            <Image src="/africa.svg" alt="logo" width={40} height={40} />
-            <h2 className="font-bold text-lg">AFRITOUR</h2>
+            <Image src="/lampung.png" alt="logo" width={40} height={40} />
+            <h2 className="font-bold text-lg">Lamskuyy</h2>
           <p className="opacity-70">
-            Consider liking and subscribing to the channel, thank you Shabrina
-            Putri for the template
+          Dari Lampung untuk Indonesia, Lamskuyy Menginspirasi Perjalananmu
           </p>
         </div>
 
@@ -49,9 +48,9 @@ const Footer = () => {
         <FooterCard
           title="Meet Us"
           links={[
-            { label: "+0 1234 56789", href: "" },
-            { label: "info@afritour.com", href: "" },
-            { label: "Grove street, Los Santos", href: "" },
+            { label: "+6285789875590", href: "" },
+            { label: "lamskuyyinfo@gmail.com", href: "" },
+            { label: "Lampung, Indonesia", href: "" },
           ]}
         />
         <FooterCard
