@@ -5,21 +5,21 @@ import Link from "next/link";
 const sections = [
   {
     title: "Why Lamskuyy",
-    description: "-",
+    description: "Lamskuyy: Tempat Wisata, Tempat Cerita.",
     link: "/help/getting-started",
     linkText: "Learn More",
   },
   {
     title: "FAQs",
     description:
-      "Find answers to frequently asked questions about our services.",
+      "Temukan jawaban atas pertanyaan yang sering diajukan tentang layanan kami.",
     link: "/help/faqs",
     linkText: "Read FAQs",
   },
   {
     title: "Contact Support",
     description:
-      "Need more help? Reach out to our support team for personalized assistance.",
+      "Butuh bantuan lebih lanjut? Hubungi tim dukungan kami untuk bantuan yang lebih personal.",
     link: "/help/contact-support",
     linkText: "Contact Us",
   },
