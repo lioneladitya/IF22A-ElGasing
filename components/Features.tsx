@@ -8,13 +8,13 @@ const Features = () => {
       {/* LEFT */}
       <div className='xs:w-full md:w-1/2 flex flex-col gap-8'>
         <div className='top'>
-          <Title title='Key features' subtitle='We offer best services' />
-          <p className='mt-8 opacity-50'>Lorem ipsum dolor sit amet consectetur adipisicing elit. In, totam.</p>              
+          <Title title='Key features' subtitle='Kami Menawarkan Layanan Terbaik' />
+          <p className='mt-8 opacity-50'>Kunjungi Wisata terbaik yang belum pernah anda kunjungi sebelumnya!</p>              
         </div>
         <div className='bottom'>
-          <FeaturesCard title='We offer best services' subtitle='Lorem Ipsum is not simply random text' />
-          <FeaturesCard title='Schedule your trip' subtitle='It has roots in a piece of classical' />
-          <FeaturesCard title='Get discounted coupons' subtitle='Lorem Ipsum is not simply random text' />
+          <FeaturesCard title='Layanan Terbaik' subtitle='Kami menawarkan wisata terbaik dan sangat rekomendasi' />
+          <FeaturesCard title='Jadwal Perjalanan Anda' subtitle='Wisata yang bagus dengan perjalanan sehat dan pemandangan asri' />
+          <FeaturesCard title='Dapatkan diskon anda!' subtitle='Klik untuk mendapatkan diskon anda' />
         </div>
       </div>
 

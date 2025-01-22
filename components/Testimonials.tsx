@@ -10,7 +10,7 @@ const Testimonials = () => {
       {/* <div className='bg-testimonial h-screen w-screen left-[-3%]  ' /> */}
       
       <div className='px-14 text-center'>
-        <Title title='testimonials' subtitle='Trust our clients' />
+        <Title title='testimonials' subtitle='Beberapa FeedBack Pelanggan' />
       </div>
 
       <div className='xs:px-4 md:px-40 h-[400px] w-full'>
