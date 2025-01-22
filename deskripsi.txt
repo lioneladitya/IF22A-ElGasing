@@ -1,4 +1,5 @@
 Nama: Arkan Fadhillah Syahrul
 Npm: 22312052
 
-Memperbaiki navbar dan menambahkan text Faq dan page help 
+Membuat page bantuan, yang baru berisikan menu bantuan, contact support, dan pertanyaan umum.
+Sudah terhubung dengan menu home

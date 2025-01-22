@@ -65,7 +65,7 @@ const Navbar = () => {
         </ul>
       </div>
       <div className="right hidden lg:flex gap-4">
-        <Link href="/app/help">
+        <Link href="/help">
           <Button type="button" title="Help" variant="btn_white" />
         </Link>
         <Button type="button" title="Call Us" variant="btn_purple" />
