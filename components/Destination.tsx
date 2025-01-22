@@ -12,11 +12,11 @@ import { Pagination } from "swiper/modules";
 import Button from "./Button";
 
 const destinationUrls = {
-  "The Great Rift Valley": "https://maps.app.goo.gl/U23nq2Xu6tPy6Lg77",
-  "Giraffe Centre Nairobi": "https://maps.app.goo.gl/xpoRnZmyq8wkWJLf6",
-  "Menengai Crater View Point": "https://maps.app.goo.gl/2eonfdnnNQF3MdeKA",
-  "Mount Kenya": "https://maps.app.goo.gl/yTeZfK8zCZJvbso78",
-  "Pyramids of Giza": "https://maps.app.goo.gl/VGoMEW1Upq9YTyJJA",
+  "Gunung Pesagi": "https://maps.app.goo.gl/hqkhsezTKkdpBuwD7",
+  "Gigi Hiu": "https://maps.app.goo.gl/db7neJa6haotiP9b7",
+  "Pahawang": "https://maps.app.goo.gl/51QLSiFrSxGHCh5B7",
+  "Taman Nasional Way Kambas": "https://maps.app.goo.gl/ftPgbCgBpznKRt219",
+  "Air Terjun Putri Malu": "https://maps.app.goo.gl/mnuM2iAnpMMjowMw9",
 };
 
 const Destination = () => {
@@ -67,52 +67,52 @@ const Destination = () => {
         >
           <SwiperSlide className="pb-12">
             <DestinationCard
-              img="/rift.jpg"
-              place="The Great Rift Valley"
-              country="Nairobi, Kenya"
-              price="$550.16"
+              img="/gunung-pesagi.jpg"
+              place="Gunung Pesagi"
+              country="Lampung Barat"
+              price="Rp. 100.000"
               rating="4.8"
-              url={destinationUrls["The Great Rift Valley"]} // Pass the URL here
+              url={destinationUrls["Gunung Pesagi"]} // Pass the URL here
             />
           </SwiperSlide>
           <SwiperSlide>
             <DestinationCard
-              img="/2.jpg"
-              place="Giraffe Centre Nairobi"
-              country="Nairobi, Kenya"
-              price="$20.99"
-              rating="4.5"
-              url={destinationUrls["Giraffe Centre Nairobi"]} // Pass the URL here
+              img="/gigi.jpg"
+              place="Gigi Hiu"
+              country="Kelumbayan, Tanggamus"
+              price="Rp. 80.000"
+              rating="4.9"
+              url={destinationUrls["Gigi Hiu"]} // Pass the URL here
             />
           </SwiperSlide>
           <SwiperSlide>
             <DestinationCard
-              img="/crater.jpg"
-              place="Menengai Crater View Point"
-              country="Nakuru, Kenya"
-              price="$150.99"
+              img="/pulau-pahawang.jpg"
+              place="Pulau Pahawang"
+              country="Pulau Pahawang"
+              price="Rp. 300.000"
               rating="5.0"
-              url={destinationUrls["Menengai Crater View Point"]} // Pass the URL here
+              url={destinationUrls["Pahawang"]} // Pass the URL here
             />
           </SwiperSlide>
           <SwiperSlide>
             <DestinationCard
-              img="/kenya.jpg"
-              place="Mount Kenya"
-              country="Central, Kenya"
-              price="$750.00"
-              rating="4.8"
-              url={destinationUrls["Mount Kenya"]} // Pass the URL here
+              img="/waykambas.jpg"
+              place="Taman Nasional Way Kambas"
+              country="Lampung Timur, Lampung"
+              price="Rp. 150.000"
+              rating="4.7"
+              url={destinationUrls["Taman Nasional Way Kambas"]} // Pass the URL here
             />
           </SwiperSlide>
           <SwiperSlide>
             <DestinationCard
-              img="/9.jpg"
-              place="Pyramids of Giza"
-              country="Giza, Egypt"
-              price="$670.50"
-              rating="4.6"
-              url={destinationUrls["Pyramids of Giza"]} // Pass the URL here
+              img="/terjun.avif"
+              place="Air Terjun Putri Malu"
+              country="Banjit, Kabupaten Way Kanan, Lampung"
+              price="Rp. 20.000"
+              rating="4.2"
+              url={destinationUrls["Air Terjun Putri Malu"]} // Pass the URL here
             />
           </SwiperSlide>
         </Swiper>
