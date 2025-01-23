@@ -8,7 +8,7 @@ const Features = () => {
       {/* LEFT */}
       <div className='xs:w-full md:w-1/2 flex flex-col gap-8'>
         <div className='top'>
-          <Title title='Key features' subtitle='Kami Menawarkan Layanan Terbaik' />
+          <Title title='Fitur utama' subtitle='Kami Menawarkan Layanan Terbaik' />
           <p className='mt-8 opacity-50'>Kunjungi Wisata terbaik yang belum pernah anda kunjungi sebelumnya!</p>              
         </div>
         <div className='bottom'>

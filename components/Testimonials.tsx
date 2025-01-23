@@ -10,35 +10,37 @@ const Testimonials = () => {
       {/* <div className='bg-testimonial h-screen w-screen left-[-3%]  ' /> */}
       
       <div className='px-14 text-center'>
-        <Title title='testimonials' subtitle='Beberapa FeedBack Pelanggan' />
+        <Title title='testimoni' subtitle='Beberapa FeedBack Pelanggan' />
       </div>
 
       <div className='xs:px-4 md:px-40 h-[400px] w-full'>
         <Carousel pauseOnHover slideInterval={2000} className='py-4'>
           <div className='flex gap-6 flex-col h-full items-center justify-center'>
-            <Image className='rounded-[50%]' src="/profile2.jpg" alt="..." width={120} height={100} />
-            <h1 className='text-xl font-semibold'><span className='text-[#FF5722]'>Mark Smith</span> / Travel Enthusiast</h1>
+            <Image className='rounded-[50%]' src="/adit.jpg" alt="..." width={120} height={100} />
+            <h1 className='text-xl font-semibold'><span className='text-[#FF5722]'>Lionel Aditya </span> / Travel Enthusiast</h1>
             <div className='flex gap-2'>
               <Image src='/star-yellow.png' alt='rating' width={30} height={30} />
               <Image src='/star-yellow.png' alt='rating' width={30} height={30} />
               <Image src='/star-yellow.png' alt='rating' width={30} height={30} />
+              <Image src='/star-yellow.png' alt='rating' width={30} height={30} />
+              <Image src='/star-yellow.png' alt='rating' width={30} height={30} />
             </div>            
-            <p className='text-lg lg:w-3/4 xl:w-1/2 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <p className='text-lg lg:w-3/4 xl:w-1/2 text-center'>"Awalnya bingung mau liburan ke mana, tapi berkat Lamskuyy saya jadi tahu banyak tempat wisata di Lampung. Liburan keluarga kami jadi tak terlupakan!"</p>
           </div>
           <div className='flex gap-6 flex-col h-full items-center justify-center'>
-            <Image className='rounded-[50%]' src="/profile1.jpg" alt="..." width={120} height={100} />
-            <h1 className='text-xl font-semibold'><span className='text-[#FF5722]'>Anna K.</span> / Travel Enthusiast</h1>
+            <Image className='rounded-[50%]' src="/arkan1.jpg" alt="..." width={120} height={100} />
+            <h1 className='text-xl font-semibold'><span className='text-[#FF5722]'>Arkan Syahrul</span> / Travel Enthusiast</h1>
             <div className='flex gap-2'>
               <Image src='/star-yellow.png' alt='rating' width={30} height={30} />
               <Image src='/star-yellow.png' alt='rating' width={30} height={30} />
               <Image src='/star-yellow.png' alt='rating' width={30} height={30} />
               <Image src='/star-yellow.png' alt='rating' width={30} height={30} />
             </div>            
-            <p className='text-lg lg:w-3/4 xl:w-1/2 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <p className='text-lg lg:w-3/4 xl:w-1/2 text-center'>"Lamskuyy benar-benar bikin traveling ke Lampung jadi lebih mudah. Panduan wisatanya praktis, bikin liburan kita lancar dan memorable!"</p>
           </div>
           <div className='flex gap-6 flex-col h-full items-center justify-center'>
-            <Image className='rounded-[50%]' src="/profile3.jpg" alt="..." width={120} height={100} />
-            <h1 className='text-xl font-semibold'><span className='text-[#FF5722]'>Leigh Anne</span> / Model</h1>
+            <Image className='rounded-[50%]' src="/aldion.jpg" alt="..." width={120} height={100} />
+            <h1 className='text-xl font-semibold'><span className='text-[#FF5722]'>Aldion Izha </span> / Model</h1>
             <div className='flex gap-2'>
               <Image src='/star-yellow.png' alt='rating' width={30} height={30} />
               <Image src='/star-yellow.png' alt='rating' width={30} height={30} />
@@ -46,7 +48,7 @@ const Testimonials = () => {
               <Image src='/star-yellow.png' alt='rating' width={30} height={30} />
               <Image src='/star-yellow.png' alt='rating' width={30} height={30} />
             </div>            
-            <p className='text-lg lg:w-3/4 xl:w-1/2 text-center'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+            <p className='text-lg lg:w-3/4 xl:w-1/2 text-center'>"Kalau mau liburan ke Lampung, jangan lupa buka Lamskuyy dulu. Semua destinasi favorit mulai dari pantai, gunung, hingga kuliner khas Lampung ada di sini. Lengkap banget!"</p>
           </div>
         </Carousel>     
       </div>

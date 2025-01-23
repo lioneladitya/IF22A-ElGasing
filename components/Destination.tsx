@@ -34,7 +34,7 @@ const Destination = () => {
       />
 
       <div className="top">
-        <Title title="top destination" subtitle="OUR TOP DESTINATIONS" />
+        <Title title="" subtitle="TUJUAN UTAMA KAMI" />
       </div>
 
       <div className="bottom flex items-center justify-between">

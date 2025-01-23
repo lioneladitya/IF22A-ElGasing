@@ -18,7 +18,7 @@ const TravelPoint = () => {
       {/* RIGHT */}
       <div className='relative md:w-[35%] xs:w-full flex flex-col gap-12'>
         <div className='top flex flex-col gap-8'>
-          <Title title='Afritour' subtitle='Kami Membantu Anda Menemukan Lokasi Wisata impian Anda!' />
+          <Title title='Lamskuy' subtitle='Kami Membantu Anda Menemukan Lokasi Wisata impian Anda!' />
           <p className='text-lg opacity-50'>Kami juga memiliki beberapa koleksi hotel dan akomodasi terbaik</p>   
         </div>
         <div className='bottom grid grid-cols-2 gap-8'>
