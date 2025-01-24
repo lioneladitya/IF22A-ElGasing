@@ -40,7 +40,7 @@ const Footer = () => {
         <FooterCard
           title="Contact"
           links={[
-            { label: "Why Afritour?", href: "/" },
+            { label: "Kenapa Lamskuyy?", href: "/" },
             { label: "Partner with us", href: "/" },
             { label: "Blog", href: "/" },
           ]}
@@ -56,13 +56,13 @@ const Footer = () => {
         <FooterCard
           title="FAQ's"
           links={[
-            { label: "How do I book a tour?", href: "/help#how-to-book" },
-            { label: "Can I cancel my booking?", href: "/help#cancel-booking" },
+            { label: "Bagaimana cara memesan tour?", href: "/help#how-to-book" },
+            { label: "Bisakah saya membatalkan pemesanan saya?", href: "/help#cancel-booking" },
             {
-              label: "What payment methods do you accept?",
+              label: "Metode pembayaran apa yang Anda terima?",
               href: "/help#payment-methods",
             },
-            { label: "View All FAQs", href: "/app/help" },
+            { label: "Lihat Semua FAQ", href: "/app/help" },
           ]}
         />
       </div>
