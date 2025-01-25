@@ -3,3 +3,9 @@ dan bisa masuk ke database / prisma studionya dengan field / model order
 
 
 -menambahkan crud untuk dashboard admin di dalam folder app/admin/dashboard/page.tsx agar mempermudah admin untuk mengelola jika ada user yang salah dalam penginputan
+
+
+
+- menambahkan folder contact/page.tsx untuk halaman user mengirim mesaage ke admin 
+dan saya juga menambahkan folder di api/messages/message.ts untuk api saat mengirim datanya
+ masuk ke dashboard admin dan saya juga merubah page.tsx di dashboard admin agar muncul datanya
