@@ -1,8 +1,8 @@
 // NAVIGATION
 export const NAV_LINKS = [
-  { href: "#home", key: "home", label: "Home" },
-  { href: "#destination-section", key: "discover", label: "Pricing" },
-  { href: "#footer-contact", key: "contacts", label: "Contact" },
+  { href: "/", key: "home", label: "Home" },
+  { href: "/#destination-section", key: "discover", label: "Pricing" },
+  { href: "/contact", key: "contacts", label: "Contact" },
 ];
 
 // FOOTER SECTION
@@ -10,17 +10,21 @@ export const FOOTER_LINKS = [
   {
     title: "Learn More",
     links: [
-      "About Hilink",
-      "Press Releases",
-      "Environment",
-      "Jobs",
-      "Privacy Policy",
-      "Contact Us",
+      { label: "About Hilink", href: "/about" },
+      { label: "Press Releases", href: "/press-releases" },
+      { label: "Environment", href: "/environment" },
+      { label: "Jobs", href: "/jobs" },
+      { label: "Privacy Policy", href: "/privacy-policy" },
+      { label: "Contact Us", href: "/contact" },
     ],
   },
   {
     title: "Our Community",
-    links: ["Climbing xixixi", "Hiking hilink", "Hilink kinthill"],
+    links: [
+      { label: "Climbing xixixi", href: "/community/climbing" },
+      { label: "Hiking hilink", href: "/community/hiking" },
+      { label: "Hilink kinthill", href: "/community/kinthill" },
+    ],
   },
 ];
 
@@ -35,10 +39,10 @@ export const FOOTER_CONTACT_INFO = {
 export const SOCIALS = {
   title: "Social",
   links: [
-    "/facebook.svg",
-    "/instagram.svg",
-    "/twitter.svg",
-    "/youtube.svg",
-    "/wordpress.svg",
+    { label: "Facebook", href: "https://facebook.com", icon: "/facebook.svg" },
+    { label: "Instagram", href: "https://instagram.com", icon: "/instagram.svg" },
+    { label: "Twitter", href: "https://twitter.com", icon: "/twitter.svg" },
+    { label: "YouTube", href: "https://youtube.com", icon: "/youtube.svg" },
+    { label: "WordPress", href: "https://wordpress.com", icon: "/wordpress.svg" },
   ],
 };
