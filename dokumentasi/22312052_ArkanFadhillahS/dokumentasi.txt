@@ -1,0 +1,5 @@
+-Memperjelas struktur halaman dengan menambahkan garis pemisah (elemen <hr> di antara navbar).
+-Menambah padding tambahan navbar dan footer agar lebih rapih.
+-Untuk meningkatkan styling dan responsivitas, struktur layout.tesx dan global.css diubah.
+-Menambahkan fitur tema dark/light menggunakan deisy ui dengan toggle.
+-Menambahkan tombol "Scroll to Top" untuk mempermudah navigasi kembali ke atas halaman.

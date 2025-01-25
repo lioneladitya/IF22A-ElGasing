@@ -58,7 +58,10 @@ const Footer: React.FC = () => {
         <FooterCard
           title="FAQ's"
           links={[
-            { label: "Bagaimana cara memesan tour?", href: "/help#how-to-book" },
+            {
+              label: "Bagaimana cara memesan tour?",
+              href: "/help#how-to-book",
+            },
             {
               label: "Bisakah saya membatalkan pemesanan saya?",
               href: "/help#cancel-booking",
@@ -77,6 +80,9 @@ const Footer: React.FC = () => {
 
       {/* Scroll To Top */}
       <ScrollToTop />
+      <p className="text-center text-sm text-gray-400 mt-6">
+        © {new Date().getFullYear()} Lamskuyy. All rights reserved.
+      </p>
     </footer>
   );
 };
