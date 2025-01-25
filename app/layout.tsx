@@ -30,10 +30,12 @@ export default function RootLayout({
         <Navbar />
 
         {/* Konten Utama */}
+        <Navbar />
+        <hr className="border-t border-gray-700 my-4" />
         <main className="relative bg-gray-950 text-white overflow-x-hidden p-6 sm:p-10">
           {children}
         </main>
-
+        <hr className="border-t border-gray-700 my-4" />
         {/* Footer */}
         <Footer />
       </body>
