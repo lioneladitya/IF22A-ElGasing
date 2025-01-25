@@ -1,12 +1,13 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
+import ScrollToTop from "./ScrollToTop";
 
-const Footer = () => {
+const Footer: React.FC = () => {
   return (
     <footer className="relative max-container bg-gray-950 text-white padding-container py-36 flex xs:gap-12 lg:gap-20 xs:flex-col lg:flex-row">
       <Image
-        className="absolute right-[-4%] xs:top-0 lg:top-[-20%] "
+        className="absolute right-[-4%] xs:top-0 lg:top-[-20%]"
         src="/footer-object.png"
         alt="object"
         width={100}
@@ -15,20 +16,20 @@ const Footer = () => {
 
       <div className="flex flex-col gap-12 lg:w-1/3">
         {/* LOGO & TEXT */}
-        <div className="flex flex-col gap-4">          
-            <Image src="/lampung.png" alt="logo" width={40} height={40} />
-            <h2 className="font-bold text-lg">Lamskuyy</h2>
+        <div className="flex flex-col gap-4">
+          <Image src="/lampung.png" alt="logo" width={40} height={40} />
+          <h2 className="font-bold text-lg">Lamskuyy</h2>
           <p className="opacity-70">
-          Dari Lampung untuk Indonesia, Lamskuyy Menginspirasi Perjalananmu
+            Dari Lampung untuk Indonesia, Lamskuyy Menginspirasi Perjalananmu
           </p>
         </div>
-
-        {/* SOCIAL MEDIA */}
       </div>
 
       {/* LINK FOOTER */}
-      <div id="footer-contact"
-      className="right lg:w-2/3 flex xs:flex-col md:flex-row xs:gap-10 md:gap-0 md:justify-between">
+      <div
+        id="footer-contact"
+        className="right lg:w-2/3 flex xs:flex-col md:flex-row xs:gap-10 md:gap-0 md:justify-between"
+      >
         <FooterCard
           title="Company"
           links={[
@@ -57,7 +58,10 @@ const Footer = () => {
           title="FAQ's"
           links={[
             { label: "Bagaimana cara memesan tour?", href: "/help#how-to-book" },
-            { label: "Bisakah saya membatalkan pemesanan saya?", href: "/help#cancel-booking" },
+            {
+              label: "Bisakah saya membatalkan pemesanan saya?",
+              href: "/help#cancel-booking",
+            },
             {
               label: "Metode pembayaran apa yang Anda terima?",
               href: "/help#payment-methods",
@@ -69,16 +73,19 @@ const Footer = () => {
 
       {/* FAQ Teaser */}
       <div id="footer-faq" className="mt-12"></div>
+
+      {/* Scroll To Top */}
+      <ScrollToTop />
     </footer>
   );
 };
 
 interface FooterCardProps {
   title: string;
-  links: { label: string; href: string }[]; //Setiap link punya teks dan url spesifik
+  links: { label: string; href: string }[]; //Setiap link punya teks dan URL spesifik
 }
 
-const FooterCard = ({ title, links }: FooterCardProps) => {
+const FooterCard: React.FC<FooterCardProps> = ({ title, links }) => {
   return (
     <div className="flex flex-col gap-4">
       <h3 className="text-2xl font-bold">{title}</h3>
