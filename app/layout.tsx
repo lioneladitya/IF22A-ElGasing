@@ -30,7 +30,7 @@ export default function RootLayout({
         <Navbar />
 
         {/* Konten Utama */}
-        <main className="relative bg-gray-950 text-white overflow-x-hidden">
+        <main className="relative bg-gray-950 text-white overflow-x-hidden p-6 sm:p-10">
           {children}
         </main>
 
