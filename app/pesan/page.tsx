@@ -1,4 +1,3 @@
-// PesanPage dengan pengiriman data ke API
 "use client";
 
 import { useSearchParams } from "next/navigation";
@@ -16,31 +15,43 @@ const PesanPage = () => {
   // State untuk input tambahan
   const [customerName, setCustomerName] = useState("");
   const [visaNumber, setVisaNumber] = useState("");
+  const [error, setError] = useState<string | null>(null);
 
-  const handleOrder = async () => {
+  const handleOrder = async (event: React.FormEvent) => {
+    event.preventDefault(); // Mencegah default behavior submit form
+
+    // Validasi input
+    if (!customerName.trim()) {
+      setError("Nama pelanggan wajib diisi.");
+      return;
+    }
+
+    setError(null); // Reset error jika validasi lolos
+
     try {
       const orderData = {
         customerName,
+        visaNumber,
         place,
         country,
         price,
         rating,
       };
-  
+
       console.log("Sending order data:", orderData);
-  
+
       const response = await fetch("/api/order/addorder", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(orderData),
       });
-  
+
       const result = await response.json();
-  
+
       if (!response.ok) {
         throw new Error(result.error || "Failed to create order");
       }
-  
+
       console.log("Order created:", result);
       alert("Pesanan berhasil dibuat!");
     } catch (err: any) {
@@ -48,7 +59,6 @@ const PesanPage = () => {
       alert(`Gagal membuat pesanan: ${err.message}`);
     }
   };
-  
 
   return (
     <div className="max-w-3xl mx-auto mt-12 p-8 bg-white rounded-xl shadow-lg border border-gray-200">
@@ -61,7 +71,7 @@ const PesanPage = () => {
               type="text"
               value={place}
               readOnly
-              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg bg-gray-100 text-gray-600 cursor-not-allowed"
+              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg bg-gray-100 text-gray-900 cursor-not-allowed"
             />
           </div>
           <div>
@@ -70,7 +80,7 @@ const PesanPage = () => {
               type="text"
               value={country}
               readOnly
-              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg bg-gray-100 text-gray-600 cursor-not-allowed"
+              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg bg-gray-100 text-gray-900 cursor-not-allowed"
             />
           </div>
           <div>
@@ -79,7 +89,7 @@ const PesanPage = () => {
               type="text"
               value={price}
               readOnly
-              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg bg-gray-100 text-gray-600 cursor-not-allowed"
+              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg bg-gray-100 text-gray-900 cursor-not-allowed"
             />
           </div>
           <div>
@@ -88,7 +98,7 @@ const PesanPage = () => {
               type="text"
               value={rating}
               readOnly
-              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg bg-gray-100 text-gray-600 cursor-not-allowed"
+              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg bg-gray-100 text-gray-900 cursor-not-allowed"
             />
           </div>
           <div>
@@ -98,19 +108,22 @@ const PesanPage = () => {
               value={customerName}
               onChange={(e) => setCustomerName(e.target.value)}
               placeholder="Masukkan nama Anda"
-              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-orange-200 focus:border-orange-400"
+              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg text-gray-900 bg-white focus:ring focus:ring-orange-200 focus:border-orange-400"
             />
           </div>
           <div>
-            <label className="block text-sm font-semibold text-black-700">No Visa (Opsional)</label>
+            <label className="block text-sm font-semibold text-gray-700">No Visa (Opsional)</label>
             <input
               type="text"
               value={visaNumber}
               onChange={(e) => setVisaNumber(e.target.value)}
               placeholder="Masukkan nomor visa (jika ada)"
-              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg focus:ring focus:ring-orange-200 focus:border-orange-400"
+              className="w-full mt-1 px-4 py-2 border border-gray-300 rounded-lg text-gray-900 bg-white focus:ring focus:ring-orange-200 focus:border-orange-400"
             />
           </div>
+          {error && (
+            <div className="text-red-600 text-sm font-semibold">{error}</div>
+          )}
         </div>
         <button
           type="submit"
